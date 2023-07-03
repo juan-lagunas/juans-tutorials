@@ -31,6 +31,7 @@ const Footer = () => {
 			{nav.map((item) => (
 				<>
 					<div
+						key={item.name}
 						onClick={() => {
 							if (navActive == item.name) {
 								setActive(!active)
@@ -64,6 +65,7 @@ const Footer = () => {
 						>
 							{item.subNav.map((item) => (
 								<Link
+									key={item}
 									href="/"
 									className="flex justify-center items-center rounded-full hover:text-[#F29F05]"
 								>
@@ -92,6 +94,7 @@ const Footer = () => {
 					>
 						{item.subNav.map((item) => (
 							<Link
+								key={item}
 								href="/"
 								className="flex justify-center items-center rounded-full hover:text-[#F29F05]"
 							>
