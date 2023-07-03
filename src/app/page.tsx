@@ -1,16 +1,11 @@
-import Link from 'next/link'
-
-import Footer from './components/Footer'
+import Header from './components/Header'
 import ModernHouse from './components/modern/ModernHouse'
+import Footer from './components/Footer'
 
 export default function Home() {
 	return (
-		<div className="h-full w-full flex flex-col items-center justify-between overflow-hidden">
-			<div className="flex items-center h-12">
-				<Link href="" className="text-lg font-semibold">
-					Juan Tutorial
-				</Link>
-			</div>
+		<div className="h-full w-full flex flex-col overflow-hidden">
+			<Header />
 			<ModernHouse />
 			<Footer />
 		</div>
