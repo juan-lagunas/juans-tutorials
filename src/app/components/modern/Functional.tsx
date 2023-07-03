@@ -1,6 +1,6 @@
 const ModernHouse = () => {
 	return (
-		<div className="h-full w-full flex items-center justify-center bg-zinc-200">
+		<div className="h-full w-full flex items-center justify-center">
 			<div className="flex flex-col w-80 sm:w-96">
 				{/* Roof */}
 				<div className="cursor-pointer hover:-translate-y-2 transition duration-200">
