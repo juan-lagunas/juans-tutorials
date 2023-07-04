@@ -8,15 +8,15 @@ const Footer = () => {
   const [navActive, setNavActive] = useState("")
   const nav = [
     {
-      name: "Structure",
+      name: "structure",
       subNav: ["Foundation", "Frame", "Roof"],
     },
     {
-      name: "Functional",
+      name: "functional",
       subNav: ["Windows/Doors", "Plumbing", "Electrical", "HVAC"],
     },
     {
-      name: "Finishes",
+      name: "finishes",
       subNav: [
         "Siding",
         "Drywall and Paint",
@@ -27,10 +27,11 @@ const Footer = () => {
   ]
 
   return (
-    <div className="relative z-10 w-11/12 sm:w-3/4 h-14 mb-4 rounded-full bg-[#261F1B] grid grid-flow-col gap-2 items-center text-center p-2 transition shadow-2xl mx-auto">
+    <div className="relative z-10 w-11/12 sm:w-3/4 h-14 mb-4 rounded-full bg-[#261F1B] grid grid-flow-col gap-2 items-center text-center p-2 transition shadow-md mx-auto">
       {nav.map((item) => (
         <>
-          <div
+          <a
+            href={`#${item.name}`}
             key={item.name}
             onClick={() => {
               if (navActive == item.name) {
@@ -42,7 +43,7 @@ const Footer = () => {
             }}
             className={`${
               active && navActive == item.name ? "bg-[#8C6954]" : ""
-            } relative group hover:bg-[#8C6954] px-2 py-2 rounded-full cursor-pointer
+            } relative group hover:bg-[#8C6954] px-2 py-2 rounded-full cursor-pointer capitalize
               `}
           >
             {item.name}
@@ -63,7 +64,7 @@ const Footer = () => {
                 </Link>
               ))}
             </div>
-          </div>
+          </a>
           {/* Small screen nav */}
           <div
             className={`${

@@ -1,6 +1,17 @@
-const Structure = () => {
+"use client"
+
+import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward"
+
+type StructureProps = {
+  id: string
+}
+
+const Structure: React.FC<StructureProps> = ({ id }) => {
   return (
-    <div className="h-full w-full flex items-center justify-center">
+    <div
+      id={id}
+      className="h-full w-full relative flex items-center justify-center"
+    >
       <div className="flex flex-col h-72 w-[340px] sm:h-80 sm:w-96">
         {/* Roof */}
         <div className="h-[15%] cursor-pointer hover:-translate-y-2 transition duration-200">
@@ -36,6 +47,12 @@ const Structure = () => {
           <div className="h-full w-full bg-zinc-700"></div>
         </div>
       </div>
+      <a
+        href="#functional"
+        className="h-10 w-10 bg-[rgba(0,0,0,0.7)] rounded-full absolute bottom-20 animate-bounce flex items-center justify-center"
+      >
+        <ArrowDownwardIcon />
+      </a>
     </div>
   )
 }

@@ -5,9 +5,9 @@ import Finishes from "./Finishes"
 const ModernHouse = () => {
   return (
     <main className="h-full w-full overflow-hidden overflow-y-auto">
-      <Structure />
-      <Functional />
-      <Finishes />
+      <Structure id="structure" />
+      <Functional id="functional" />
+      <Finishes id="finishes" />
     </main>
   )
 }

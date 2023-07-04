@@ -1,6 +1,10 @@
-const Finishes = () => {
+type FinishesProps = {
+  id: string
+}
+
+const Finishes: React.FC<FinishesProps> = ({ id }) => {
   return (
-    <div className="h-full w-full flex items-center justify-center">
+    <div id={id} className="h-full w-full flex items-center justify-center">
       <div className="flex flex-col h-72 sm:h-80 w-80 sm:w-96 shrink-1">
         {/* Roof */}
         <div className="h-[15%] cursor-pointer hover:-translate-y-2 transition duration-200">

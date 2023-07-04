@@ -5,9 +5,13 @@
 html,
 body,
 :root {
-  height: 100%;
+  height: 100vh;
   background-color: #736453;
   color-scheme: dark;
+}
+
+main {
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
