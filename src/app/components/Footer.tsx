@@ -44,7 +44,7 @@ const Footer = () => {
             className={`${
               active && navActive == item.name ? "bg-[#8C6954]" : ""
             } relative group hover:bg-[#8C6954] px-2 py-2 rounded-full cursor-pointer capitalize
-              `}
+            `}
           >
             {item.name}
             {/* Large screen nav */}
@@ -52,7 +52,7 @@ const Footer = () => {
               className={`${
                 active && navActive == item.name ? "" : "hidden"
               } max-lg:hidden group-hover:visible absolute h-32 w-full bg-[#261F1B] left-0 -top-36 rounded-3xl grid grid-cols-2 gap-2 p-2 shadow-lg
-                `}
+              `}
             >
               {item.subNav.map((item) => (
                 <Link
@@ -70,7 +70,7 @@ const Footer = () => {
             className={`${
               active && navActive == item.name ? "" : "hidden"
             } lg:hidden group-hover:visible absolute h-32 w-full bg-[#261F1B] -top-36 rounded-3xl grid grid-cols-2 gap-2 p-2
-              `}
+            `}
           >
             {item.subNav.map((item) => (
               <Link
