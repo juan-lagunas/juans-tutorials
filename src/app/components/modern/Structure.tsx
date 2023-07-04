@@ -49,7 +49,7 @@ const Structure: React.FC<StructureProps> = ({ id }) => {
       </div>
       <a
         href="#functional"
-        className="h-10 w-10 bg-[rgba(0,0,0,0.7)] rounded-full absolute bottom-20 animate-bounce flex items-center justify-center"
+        className="h-10 w-10 bg-[rgba(0,0,0,0.7)] rounded-full absolute bottom-10 sm:bottom-20 animate-bounce flex items-center justify-center"
       >
         <ArrowDownwardIcon />
       </a>
