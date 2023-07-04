@@ -1,7 +1,7 @@
 const Structure = () => {
   return (
     <div className="h-full w-full flex items-center justify-center">
-      <div className="flex flex-col h-72 sm:h-80 w-80 sm:w-96 shrink-1">
+      <div className="flex flex-col h-72 w-[340px] sm:h-80 sm:w-96 shrink-1">
         {/* Roof */}
         <div className="h-[20%] cursor-pointer hover:-translate-y-2 transition duration-200">
           <div className="h-2/3 w-1/3 bg-black"></div>
