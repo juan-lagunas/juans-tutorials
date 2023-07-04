@@ -41,7 +41,9 @@ const Footer = () => {
 							setNavActive(item.name)
 						}}
 						className={`${
-							active && navActive == item.name ? 'bg-[#8C6954]' : ''
+							active && navActive == item.name
+								? 'bg-[#8C6954]'
+								: ''
 						} relative group hover:bg-[#8C6954] px-2 py-2 rounded-full cursor-pointer
               `}
 					>
