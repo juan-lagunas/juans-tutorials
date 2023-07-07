@@ -5,8 +5,8 @@ import GitHubIcon from "@mui/icons-material/GitHub"
 
 const Header = () => {
   return (
-    <div className="h-14 w-full flex items-center justify-between px-4 sm:px-10 text-center">
-      <a href="#structure" className="text-sm font-semibold shrink">
+    <div className="flex h-14 w-full items-center justify-between px-4 text-center sm:px-10">
+      <a href="#structure" className="shrink text-sm font-semibold">
         Juan Tutorial
       </a>
       <Link href="https://github.com/juan-lagunas/juans-tutorials">

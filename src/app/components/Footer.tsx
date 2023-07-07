@@ -27,7 +27,7 @@ const Footer = () => {
   ]
 
   return (
-    <div className="relative z-10 w-11/12 sm:w-3/4 h-14 mb-4 rounded-full bg-[#261F1B] grid grid-flow-col gap-2 items-center text-center p-2 transition shadow-md mx-auto">
+    <div className="relative z-10 mx-auto mb-4 grid h-14 w-11/12 grid-flow-col items-center gap-2 rounded-full bg-[#261F1B] p-2 text-center shadow-md transition sm:w-3/4">
       {nav.map((item) => (
         <>
           <a
@@ -43,7 +43,7 @@ const Footer = () => {
             }}
             className={`${
               active && navActive == item.name ? "bg-[#8C6954]" : ""
-            } relative group hover:bg-[#8C6954] px-2 py-2 rounded-full cursor-pointer capitalize
+            } group relative cursor-pointer rounded-full px-2 py-2 capitalize hover:bg-[#8C6954]
             `}
           >
             {item.name}
@@ -51,14 +51,14 @@ const Footer = () => {
             <div
               className={`${
                 active && navActive == item.name ? "" : "hidden"
-              } max-lg:hidden group-hover:visible absolute h-32 w-full bg-[#261F1B] left-0 -top-36 rounded-3xl grid grid-cols-2 gap-2 p-2 shadow-lg
+              } absolute -top-36 left-0 grid h-32 w-full grid-cols-2 gap-2 rounded-3xl bg-[#261F1B] p-2 shadow-lg group-hover:visible max-lg:hidden
               `}
             >
               {item.subNav.map((item) => (
                 <Link
                   key={item}
                   href="/"
-                  className="flex justify-center items-center rounded-full hover:text-[#F29F05]"
+                  className="flex items-center justify-center rounded-full hover:text-[#F29F05]"
                 >
                   {item}
                 </Link>
@@ -69,14 +69,14 @@ const Footer = () => {
           <div
             className={`${
               active && navActive == item.name ? "" : "hidden"
-            } lg:hidden group-hover:visible absolute h-32 w-full bg-[#261F1B] -top-36 rounded-3xl grid grid-cols-2 gap-2 p-2
+            } absolute -top-36 grid h-32 w-full grid-cols-2 gap-2 rounded-3xl bg-[#261F1B] p-2 group-hover:visible lg:hidden
             `}
           >
             {item.subNav.map((item) => (
               <Link
                 key={item}
                 href="/"
-                className="flex justify-center items-center rounded-full hover:text-[#F29F05]"
+                className="flex items-center justify-center rounded-full hover:text-[#F29F05]"
               >
                 {item}
               </Link>

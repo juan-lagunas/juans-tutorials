@@ -12,7 +12,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="select-none box-border font-mono">{children}</body>
+      <body className="box-border select-none font-mono">{children}</body>
     </html>
   )
 }
