@@ -10,7 +10,7 @@ const About = ({ id }: Props) => {
       id={id}
       className="relative flex h-full w-full items-center justify-center"
     >
-      <div>Juan Tutorials</div>
+      <div>Juan Tutorialss!</div>
       <a
         href="#functional"
         className="absolute bottom-[10%] flex h-10 w-10 animate-bounce items-center justify-center rounded-full"
